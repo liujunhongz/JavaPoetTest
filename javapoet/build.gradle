@@ -7,9 +7,22 @@ dependencies {
     implementation 'com.squareup:javapoet:1.10.0'
 }
 
+
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+configurations.all {
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
 // task
 // gradle idea
 
