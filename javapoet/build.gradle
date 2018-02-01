@@ -2,9 +2,9 @@ apply plugin: 'java-library'
 //apply plugin: 'idea'
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    implementation files('libs/javapoet.jar')
+    implementation files('libs/javapoet.jar')
 //    https://github.com/square/javapoet
-    implementation 'com.squareup:javapoet:1.10.0'
+//    implementation 'com.squareup:javapoet:1.10.0'
 }
 
 
